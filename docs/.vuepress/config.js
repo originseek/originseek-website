@@ -23,7 +23,19 @@ export default defineUserConfig({
     
     // 插件配置
     plugins: {
-      // 所有插件默认开启
+      // 启用搜索功能
+      search: {
+        // 配置搜索
+        locales: {
+          "/": {
+            placeholder: "搜索"
+          }
+        },
+        // 最多显示10个搜索结果
+        maxSuggestions: 10,
+        // 排除首页和404页面
+        isSearchable: (page) => page.path !== "/" && page.path !== "/404.html"
+      }
     },
   }),
 })
