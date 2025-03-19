@@ -63,7 +63,55 @@ pnpm docs:build
 3. 应用主题和插件
 4. 生成优化后的生产环境代码
 
-构建完成后，静态文件将生成在 `docs/.vuepress/dist` 目录中。这个目录包含了完全静态的HTML、CSS和JavaScript文件，可以直接部署到任何静态网站托管服务。
+构建完成后，静态文件将生成在 `docs/.vuepress/dist` 目录中，您可以将这些文件部署到任何静态网站托管服务。
+
+## 使用deploy.sh自动部署
+
+项目提供了一个自动化部署脚本`deploy.sh`，可以帮助您快速将网站部署到GitHub Pages。
+
+### 脚本功能
+
+`deploy.sh`脚本会自动执行以下操作：
+
+1. 构建静态网站（执行`pnpm docs:build`命令）
+2. 初始化Git仓库（在`docs/.vuepress/dist`目录中）
+3. 提交所有文件
+4. 将文件推送到指定的GitHub仓库（默认为`https://github.com/originseek/originseek.github.io.git`的`main`分支）
+
+### 使用方法
+
+1. 首先确保脚本具有执行权限：
+
+```bash
+chmod +x deploy.sh
+```
+
+2. 执行脚本：
+
+```bash
+./deploy.sh
+```
+
+或者，您也可以直接使用sh命令执行脚本（无需设置执行权限）：
+
+```bash
+sh deploy.sh
+```
+
+### 自定义部署目标
+
+如果您需要将网站部署到其他GitHub仓库，请修改`deploy.sh`文件中的以下行：
+
+```bash
+# 将此行修改为您的GitHub仓库地址和分支
+git push -f https://github.com/your-username/your-repo.git master:main
+```
+
+### 注意事项
+
+- 确保您对目标仓库有写入权限
+- 如果使用SSH方式推送，可以将URL修改为SSH格式
+- 脚本使用`-f`参数强制推送，这将覆盖目标分支上的所有内容，请谨慎使用
 
 ### 检查构建结果
 
