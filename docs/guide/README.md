@@ -56,7 +56,34 @@ pnpm docs:dev
 pnpm docs:build
 ```
 
-构建完成后，静态文件将生成在 `docs/.vuepress/dist` 目录中，您可以将这些文件部署到任何静态网站托管服务。
+构建过程会执行以下操作：
+
+1. 编译所有的Markdown文件为HTML
+2. 处理所有的静态资源（图片、CSS、JavaScript等）
+3. 应用主题和插件
+4. 生成优化后的生产环境代码
+
+构建完成后，静态文件将生成在 `docs/.vuepress/dist` 目录中。这个目录包含了完全静态的HTML、CSS和JavaScript文件，可以直接部署到任何静态网站托管服务。
+
+### 检查构建结果
+
+您可以在构建完成后检查生成的文件：
+
+```bash
+# 查看生成的文件结构
+ls -la docs/.vuepress/dist
+```
+
+### 部署选项
+
+您可以将构建好的静态文件部署到多种平台：
+
+- **GitHub Pages**：适合开源项目文档
+- **Netlify**：提供免费托管和自动部署
+- **Vercel**：适合前端项目，提供全球CDN
+- **自托管服务器**：将dist目录内容上传到您的Web服务器
+
+部署时只需将 `docs/.vuepress/dist` 目录中的所有文件上传到您选择的托管服务即可。
 
 ## 常见问题
 
