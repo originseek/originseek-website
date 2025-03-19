@@ -12,6 +12,11 @@ export default defineUserConfig({
       url: 'https://originseek.com',
     },
     
+    // 社交链接
+    repo: 'originseek',
+    repoDisplay: true,
+    repoLabel: "GitHub",
+    
     // 导航栏配置
     navbar: [
       { text: '首页', link: '/' },
