@@ -6,7 +6,7 @@ heroText: OriginSeek
 tagline: 探索技术本源，分享实践真知
 actions:
   - text: 开始学习
-    link: /guide/
+    link: /java/
     type: primary
   - text: 了解更多
     link: /about/
