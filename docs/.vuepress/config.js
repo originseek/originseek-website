@@ -12,6 +12,8 @@ export default defineUserConfig({
       url: 'https://originseek.com',
     },
     logo: '/logo.svg',
+    breadcrumb: true,
+    breadcrumbIcon: true,
     
     // 社交链接
     repo: 'originseek',
