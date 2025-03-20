@@ -12,8 +12,8 @@ actions:
     link: /about/
     type: secondary
 features:
-  - title: Java 技术精粹
-    details: 深入浅出的 Java 核心知识，从基础到高级，助您掌握 Java 开发精髓。
+  - title: 爪哇技术精粹
+    details: 深入浅出的爪哇核心知识，从基础到高级，助您掌握爪哇开发精髓。
   - title: 最佳实践指南
     details: 汇集企业级开发经验，设计模式、性能优化、代码规范一应俱全。
   - title: 框架源码剖析
