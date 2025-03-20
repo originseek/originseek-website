@@ -8,7 +8,7 @@ export default defineUserConfig({
     // 主题基本配置
     hostname: 'https://originseek.com',
     author: {
-      name: 'OriginSeek',
+      name: 'OriginSeek@王虎',
       url: 'https://originseek.com',
     },
     logo: '/logo.svg',
