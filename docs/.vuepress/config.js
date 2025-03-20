@@ -11,6 +11,7 @@ export default defineUserConfig({
       name: 'OriginSeek',
       url: 'https://originseek.com',
     },
+    logo: '/logo.svg',
     
     // 社交链接
     repo: 'originseek',
@@ -20,6 +21,17 @@ export default defineUserConfig({
     // 导航栏配置
     navbar: [
       { text: '首页', link: '/' },
+      { 
+        text: '爪哇',
+        link: '/java/',
+        children: [
+          { text: 'Java基础', link: '/java/#java-基础' },
+          { text: 'Java进阶', link: '/java/#java-进阶' },
+          { text: 'Java框架', link: '/java/#java-框架' },
+          { text: '最佳实践', link: '/java/#最佳实践' }
+        ]
+      },
+      { text: '阅读书单', link: '/books/' },
       { text: '关于作者', link: '/about/' },
       { text: '版权说明', link: '/copyright/' },
     ],
