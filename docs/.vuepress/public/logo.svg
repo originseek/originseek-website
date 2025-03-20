@@ -1,11 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
+    <linearGradient id="steamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="cupGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3F66"/>
+      <stop offset="100%" style="stop-color:#0A2647"/>
     </linearGradient>
   </defs>
-  <circle cx="100" cy="100" r="80" fill="url(#gradient)" />
-  <text x="100" y="115" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">OriginSeek</text>
-  <path d="M70,70 Q100,40 130,70 T160,100 Q130,130 100,160 T40,100 Q70,70 100,40 T130,70" fill="none" stroke="white" stroke-width="3" />
+  
+  <!-- 指南针外圈 -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#1E3F66" stroke-width="4" opacity="0.2">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 探索轨迹 -->
+  <path d="M100,10 A90,90 0 1,1 10,100" fill="none" stroke="#FFD700" stroke-width="2" stroke-dasharray="10,5" opacity="0.6">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="15s"
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Java咖啡杯主体（改造成放大镜形状） -->
+  <g transform="translate(50,50) rotate(-30)" filter="url(#glow)">
+    <path d="M20,0 L80,0 C90,0 100,10 100,20 L90,80 C90,90 80,100 70,100 L30,100 C20,100 10,90 10,80 L0,20 C0,10 10,0 20,0 Z" fill="url(#cupGradient)"/>
+    
+    <!-- 放大镜手柄（原杯把手改造） -->
+    <path d="M100,30 C130,30 130,70 100,70" fill="none" stroke="#1E3F66" stroke-width="12"/>
+    
+    <!-- 动态咖啡蒸汽 -->
+    <g transform="translate(0,-5)">
+      <path d="M30,0 C40,-10 60,-10 70,0" stroke="url(#steamGradient)" stroke-width="3" fill="none">
+        <animate
+          attributeName="d"
+          dur="3s"
+          repeatCount="indefinite"
+          values="M30,0 C40,-10 60,-10 70,0;M30,0 C40,-15 60,-15 70,0;M30,0 C40,-10 60,-10 70,0"/>
+      </path>
+    </g>
+  </g>
+  
+  <!-- 指南针指针 -->
+  <g transform="translate(100,100)">
+    <path d="M0,-40 L10,-30 L0,40 L-10,-30 Z" fill="#FFD700" opacity="0.8">
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0 0 0"
+        to="360 0 0"
+        dur="10s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- 文字效果 -->
+  <text x="100" y="160" font-family="Arial" font-size="18" fill="#1E3F66" text-anchor="middle" font-weight="bold" filter="url(#glow)">OriginSeek</text>
 </svg>
