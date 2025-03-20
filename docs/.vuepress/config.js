@@ -20,7 +20,8 @@ export default defineUserConfig({
     // 导航栏配置
     navbar: [
       { text: '首页', link: '/' },
-      { text: '关于', link: '/about/' },
+      { text: '关于作者', link: '/about/' },
+      { text: '版权说明', link: '/copyright/' },
     ],
     
     // 侧边栏配置
