@@ -31,7 +31,34 @@ export default defineUserConfig({
     ],
     
     // 侧边栏配置
-    sidebar: 'structure',
+    sidebar: {
+      '/': [
+        {
+          text: '首页',
+          link: '/'
+        },
+        {
+          text: '爪哇',
+          link: '/java/'
+        },
+        {
+          text: '阅读书单',
+          link: '/books/'
+        },
+        {
+          text: '常用工具',
+          link: '/tools/'
+        },
+        {
+          text: '关于作者',
+          link: '/about/'
+        },
+        {
+          text: '版权说明',
+          link: '/copyright/'
+        }
+      ]
+    },
     
     // 插件配置
     plugins: {
