@@ -20,7 +20,7 @@ features:
     details: Spring、MyBatis 等主流框架深度解析，理解技术本质。
   - title: 实战项目驱动
     details: 真实项目案例，从需求分析到架构设计，全方位提升开发能力。
-footer: "京ICP备XXXXX号-1 | 网站构建: VuePress | 主题: VuePress Theme Hope | 开发工具: Trae"
+
 ---
 
 # 欢迎来到 OriginSeek

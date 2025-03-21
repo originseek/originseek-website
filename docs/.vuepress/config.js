@@ -15,6 +15,10 @@ export default defineUserConfig({
     breadcrumb: true,
     breadcrumbIcon: true,
     
+    // 页脚配置
+    footer: "京ICP备XXXXX号-1 | <a href=\"/terms/\">服务条款</a> <a href=\"/privacy/\">隐私政策</a>",
+    copyright: "Copyright © 2025 OriginSeek <a href=\"/copyright/\">版权说明</a>",
+    
     // 社交链接
     repo: 'originseek',
     repoDisplay: true,
@@ -27,7 +31,6 @@ export default defineUserConfig({
       { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
       { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
       { text: '关于作者', link: '/about/', activeMatch: '/about/'},
-      { text: '版权说明', link: '/copyright/', activeMatch: '/copyright/'},
     ],
     
     // 侧边栏配置
