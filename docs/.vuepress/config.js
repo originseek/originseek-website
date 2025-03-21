@@ -23,20 +23,11 @@ export default defineUserConfig({
     // 导航栏配置
     navbar: [
       { text: '首页', link: '/' },
-      { 
-        text: '爪哇',
-        link: '/java/',
-        children: [
-          { text: 'Java基础', link: '/java/#java-基础' },
-          { text: 'Java进阶', link: '/java/#java-进阶' },
-          { text: 'Java框架', link: '/java/#java-框架' },
-          { text: '最佳实践', link: '/java/#最佳实践' }
-        ]
-      },
-      { text: '阅读书单', link: '/books/' },
-      { text: '常用工具', link: '/tools/' },
-      { text: '关于作者', link: '/about/' },
-      { text: '版权说明', link: '/copyright/' },
+      { text: '爪哇',link: '/java/', activeMatch: '/java/'},
+      { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
+      { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
+      { text: '关于作者', link: '/about/', activeMatch: '/about/'},
+      { text: '版权说明', link: '/copyright/', activeMatch: '/copyright/'},
     ],
     
     // 侧边栏配置
