@@ -193,10 +193,31 @@ export default defineUserConfig({
       ],
       '/about/': [
         {
-          text: '技术专长',
+          text: '个人简介',
           collapsible: true,
           children: [
-            { text: '后端开发', link: '/about/skills/backend' }
+            { text: '个人简介', link: '/about/#个人简介' }
+          ]
+        },
+        {
+          text: '背景经历',
+          collapsible: true,
+          children: [
+            { text: '背景经历', link: '/about/#背景经历' }
+          ]
+        },
+        {
+          text: '技术栈',
+          collapsible: true,
+          children: [
+            { text: '技术栈', link: '/about/#技术栈' }
+          ]
+        },
+        {
+          text: '兴趣爱好',
+          collapsible: true,
+          children: [
+            { text: '兴趣爱好', link: '/about/#兴趣爱好' }
           ]
         }
       ]
