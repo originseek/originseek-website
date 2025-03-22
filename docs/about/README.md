@@ -29,7 +29,7 @@ OriginSeek 的诞生，源于我对技术的热爱，也源于我对自我提升
 - 微服务架构: Dubbo、Spring Cloud
 - 容器化: Docker、Kubernetes
 - 决策引擎: Drools、URule
-- 流程引擎: LiveFlow
+- 流程引擎: LiteFlow
 
 ## 兴趣爱好
 
