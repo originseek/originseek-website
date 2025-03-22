@@ -17,7 +17,7 @@ export default defineUserConfig({
     
     // 页脚配置
     footer: "京ICP备XXXXX号-1 <a href=\"/terms/\">服务条款</a> <a href=\"/privacy/\">隐私政策</a>",
-    copyright: "Copyright © 2025 OriginSeek <a href=\"/copyright/\">版权说明</a>",
+    copyright: "Copyright © 2025 OriginSeek@王虎 <a href=\"/copyright/\">版权说明</a>",
     
     // 社交链接
     repo: 'originseek',
@@ -101,6 +101,13 @@ export default defineUserConfig({
       ],
       '/tools/': [
         {
+          text: 'API工具',
+          collapsible: true,
+          children: [
+            { text: 'API测试工具', link: '/tools/api/test' }
+          ]
+        },
+        {
           text: '检查类工具',
           collapsible: true,
           children: [
@@ -110,10 +117,77 @@ export default defineUserConfig({
           ]
         },
         {
+          text: '代码工具',
+          collapsible: true,
+          children: [
+            { text: '代码调试工具', link: '/tools/code/debug' },
+            { text: '代码生成工具', link: '/tools/code/generator' }
+          ]
+        },
+        {
           text: '转换类工具',
           collapsible: true,
           children: [
-            { text: '进制转换工具', link: '/tools/convert/hex' }
+            { text: '进制转换工具', link: '/tools/convert/base' },
+            { text: '时间戳转换工具', link: '/tools/convert/timestamp' },
+            { text: '编码转换工具', link: '/tools/convert/encoding' }
+          ]
+        },
+        {
+          text: '数据工具',
+          collapsible: true,
+          children: [
+            { text: '数据可视化工具', link: '/tools/data/visualization' }
+          ]
+        },
+        {
+          text: '设计工具',
+          collapsible: true,
+          children: [
+            { text: '配色工具', link: '/tools/design/color' }
+          ]
+        },
+        {
+          text: '编辑器工具',
+          collapsible: true,
+          children: [
+            { text: '在线编辑器', link: '/tools/editor/online' }
+          ]
+        },
+        {
+          text: '图片工具',
+          collapsible: true,
+          children: [
+            { text: '图片压缩工具', link: '/tools/image/compress' },
+            { text: '图片编辑工具', link: '/tools/image/edit' }
+          ]
+        },
+        {
+          text: '网络工具',
+          collapsible: true,
+          children: [
+            { text: '网络诊断工具', link: '/tools/network/diagnostic' }
+          ]
+        },
+        {
+          text: '办公工具',
+          collapsible: true,
+          children: [
+            { text: '文档工具', link: '/tools/office/document' }
+          ]
+        },
+        {
+          text: '性能工具',
+          collapsible: true,
+          children: [
+            { text: '性能测试工具', link: '/tools/performance/test' }
+          ]
+        },
+        {
+          text: '安全工具',
+          collapsible: true,
+          children: [
+            { text: '密码工具', link: '/tools/security/password' }
           ]
         }
       ],
