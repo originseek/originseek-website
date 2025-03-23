@@ -28,6 +28,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: '爪哇',link: '/java/', activeMatch: '/java/'},
+      { text: 'AI框架', link: '/ai/', activeMatch: '/ai/'},
       { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
       { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
       { text: '关于作者', link: '/about/', activeMatch: '/about/'},
@@ -188,6 +189,48 @@ export default defineUserConfig({
           collapsible: true,
           children: [
             { text: '密码工具', link: '/tools/security/password' }
+          ]
+        }
+      ],
+      '/ai/': [
+        {
+          text: 'Spring AI',
+          collapsible: true,
+          children: [
+            { text: '快速开始', link: '/ai/spring-ai/getting-started' },
+            //{ text: '基础概念', link: '/ai/spring-ai/concepts' },
+            //{ text: '模型集成', link: '/ai/spring-ai/models' },
+            //{ text: '最佳实践', link: '/ai/spring-ai/best-practices' }
+          ]
+        },
+        {
+          text: 'LangChain4j',
+          collapsible: true,
+          children: [
+            { text: '入门指南', link: '/ai/langchain4j/introduction' },
+            //{ text: '核心功能', link: '/ai/langchain4j/core-features' },
+            //{ text: '链式调用', link: '/ai/langchain4j/chains' },
+            //{ text: '应用示例', link: '/ai/langchain4j/examples' }
+          ]
+        },
+        {
+          text: 'Jlama',
+          collapsible: true,
+          children: [
+            { text: '基本使用', link: '/ai/jlama/basic-usage' },
+            //{ text: '模型训练', link: '/ai/jlama/training' },
+            //{ text: '推理部署', link: '/ai/jlama/inference' },
+            //{ text: '性能优化', link: '/ai/jlama/optimization' }
+          ]
+        },
+        {
+          text: 'deepseek4j',
+          collapsible: true,
+          children: [
+            { text: '快速上手', link: '/ai/deepseek4j/quickstart' },
+            //{ text: 'API参考', link: '/ai/deepseek4j/api-reference' },
+            //{ text: '高级特性', link: '/ai/deepseek4j/advanced' },
+            //{ text: '实战案例', link: '/ai/deepseek4j/case-studies' }
           ]
         }
       ],
