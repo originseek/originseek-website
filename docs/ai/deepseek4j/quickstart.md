@@ -2,13 +2,12 @@
 
 ## 简介
 
-deepseek4j 是一个专注于深度学习的 Java 框架，它提供了全面的 API 支持，帮助开发者构建和部署深度学习模型。本指南将帮助你快速上手 deepseek4j。
+deepseek4j 是一个基于 DeepSeek API 的 Java SDK，它提供了简单易用的接口，帮助开发者快速集成和使用 DeepSeek 的大语言模型能力。本指南将帮助你快速上手 deepseek4j。
 
 ## 环境要求
 
-- Java 17 或更高版本
+- Java 8 或更高版本
 - Maven 或 Gradle 构建工具
-- CUDA 支持（可选，用于 GPU 加速）
 
 ## 快速开始
 
@@ -16,8 +15,8 @@ deepseek4j 是一个专注于深度学习的 Java 框架，它提供了全面的
 
 ```xml
 <dependency>
-    <groupId>com.deepseek</groupId>
-    <artifactId>deepseek4j-core</artifactId>
+    <groupId>com.pig4cloud.plugin</groupId>
+    <artifactId>deepseek4j-spring-boot-starter</artifactId>
     <version>0.1.0</version>
 </dependency>
 ```
@@ -26,80 +25,103 @@ deepseek4j 是一个专注于深度学习的 Java 框架，它提供了全面的
 
 ```groovy
 dependencies {
-    implementation 'com.deepseek:deepseek4j-core:0.1.0'
+    implementation 'com.pig4cloud.plugin:deepseek4j-spring-boot-starter:0.1.0'
 }
 ```
 
 ## 基本使用
 
-### 1. 初始化模型
+### 1. 配置 API Key
 
-```java
-DeepseekConfig config = DeepseekConfig.builder()
-    .modelPath("path/to/model")
-    .deviceType(DeviceType.CUDA)  // 或 DeviceType.CPU
-    .build();
+在 `application.yml` 中配置 DeepSeek API Key：
 
-DeepseekModel model = new DeepseekModel(config);
+```yaml
+deepseek:
+  api-key: your-api-key-here
 ```
 
-### 2. 文本生成
+### 2. 注入 DeepSeekClient
 
 ```java
-String prompt = "Tell me about artificial intelligence.";
-GenerationResult result = model.generate(prompt);
-System.out.println(result.getText());
+@Autowired
+private DeepSeekClient deepseekClient;
 ```
 
-### 3. 参数配置
+### 3. 文本生成
 
 ```java
-GenerationParams params = GenerationParams.builder()
-    .maxLength(100)
-    .temperature(0.7)
-    .topP(0.9)
+// 基本对话
+ChatMessage message = ChatMessage.of("Tell me about artificial intelligence.");
+ChatResponse response = deepseekClient.chat(message);
+System.out.println(response.getContent());
+
+// 带上下文的对话
+List<ChatMessage> messages = new ArrayList<>();
+messages.add(ChatMessage.of(Role.SYSTEM, "You are a helpful assistant."));
+messages.add(ChatMessage.of(Role.USER, "What is deep learning?"));
+ChatResponse response = deepseekClient.chat(messages);
+```
+
+### 4. 参数配置
+
+```java
+ChatMessage message = ChatMessage.of("Tell me a story.");
+ChatCompletionRequest request = ChatCompletionRequest.builder()
+    .messages(Collections.singletonList(message))
+    .temperature(0.7f)
+    .topP(0.9f)
+    .maxTokens(2000)
     .build();
 
-GenerationResult result = model.generate(prompt, params);
+ChatResponse response = deepseekClient.chat(request);
 ```
 
 ## 高级特性
 
-### 1. 批量处理
+### 1. 流式输出
 
 ```java
-List<String> prompts = Arrays.asList(
-    "What is deep learning?",
-    "Explain neural networks"
-);
+ChatMessage message = ChatMessage.of("Write a long story.");
+deepseekClient.streamChat(message, new ChatStreamListener() {
+    @Override
+    public void onMessage(String content) {
+        System.out.print(content);
+    }
 
-List<GenerationResult> results = model.generateBatch(prompts);
+    @Override
+    public void onError(Throwable throwable) {
+        throwable.printStackTrace();
+    }
+
+    @Override
+    public void onComplete() {
+        System.out.println("\nStream completed");
+    }
+});
 ```
 
-### 2. 模型优化
+### 2. 自定义配置
 
 ```java
-OptimizationConfig optConfig = OptimizationConfig.builder()
-    .quantization(true)
-    .dynamicBatching(true)
-    .build();
-
-model.optimize(optConfig);
+@Configuration
+public class DeepSeekConfig {
+    @Bean
+    public DeepSeekClient deepseekClient() {
+        return DeepSeekClient.builder()
+            .apiKey("your-api-key")
+            .timeout(60)
+            .baseUrl("https://api.deepseek.com")
+            .build();
+    }
+}
 ```
-
-## 性能优化
-
-1. 使用 GPU 加速计算
-2. 启用动态批处理
-3. 使用量化技术减少内存占用
-4. 优化模型加载和推理过程
 
 ## 最佳实践
 
-1. 选择合适的硬件配置
-2. 优化模型参数和配置
+1. 合理设置超时时间和重试策略
+2. 使用流式输出处理长文本生成
 3. 实现错误处理机制
-4. 监控系统资源使用
+4. 合理管理 API Key
 
 ## 下一步
 

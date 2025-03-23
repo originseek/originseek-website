@@ -204,6 +204,15 @@ export default defineUserConfig({
           ]
         },
         {
+          text: 'Spring AI Alibaba',
+          collapsible: true,
+          children: [
+            { text: '快速入门', link: '/ai/spring-ai-alibaba/getting-started' },
+            //{ text: '功能特性', link: '/ai/spring-ai-alibaba/features' },
+            //{ text: '最佳实践', link: '/ai/spring-ai-alibaba/best-practices' }
+          ]
+        },
+        {
           text: 'LangChain4j',
           collapsible: true,
           children: [
@@ -231,6 +240,69 @@ export default defineUserConfig({
             //{ text: 'API参考', link: '/ai/deepseek4j/api-reference' },
             //{ text: '高级特性', link: '/ai/deepseek4j/advanced' },
             //{ text: '实战案例', link: '/ai/deepseek4j/case-studies' }
+          ]
+        },
+        {
+          text: 'Deeplearning4j',
+          collapsible: true,
+          children: [
+            { text: '入门教程', link: '/ai/deeplearning4j/getting-started' },
+            //{ text: '神经网络', link: '/ai/deeplearning4j/neural-networks' },
+            //{ text: '数据预处理', link: '/ai/deeplearning4j/data-preprocessing' }
+          ]
+        },
+        {
+          text: 'Neuroph',
+          collapsible: true,
+          children: [
+            { text: '快速开始', link: '/ai/neuroph/getting-started' },
+            //{ text: '神经网络构建', link: '/ai/neuroph/network-building' },
+            //{ text: '应用案例', link: '/ai/neuroph/use-cases' }
+          ]
+        },
+        {
+          text: 'Weka',
+          collapsible: true,
+          children: [
+            { text: '基础教程', link: '/ai/weka/basics' },
+            //{ text: '数据挖掘', link: '/ai/weka/data-mining' },
+            //{ text: '机器学习', link: '/ai/weka/machine-learning' }
+          ]
+        },
+        {
+          text: 'Encog',
+          collapsible: true,
+          children: [
+            { text: '入门指南', link: '/ai/encog/getting-started' },
+            //{ text: '神经网络', link: '/ai/encog/neural-networks' },
+            //{ text: '遗传算法', link: '/ai/encog/genetic-algorithms' }
+          ]
+        },
+        {
+          text: 'Mallet',
+          collapsible: true,
+          children: [
+            { text: '快速入门', link: '/ai/mallet/getting-started' },
+            //{ text: '主题建模', link: '/ai/mallet/topic-modeling' },
+            //{ text: '文本分类', link: '/ai/mallet/text-classification' }
+          ]
+        },
+        {
+          text: 'Agent-Flex',
+          collapsible: true,
+          children: [
+            { text: '入门教程', link: '/ai/agent-flex/getting-started' },
+            //{ text: '智能代理', link: '/ai/agent-flex/intelligent-agents' },
+            //{ text: '实战应用', link: '/ai/agent-flex/practical-applications' }
+          ]
+        },
+        {
+          text: 'JavaML',
+          collapsible: true,
+          children: [
+            { text: '基础入门', link: '/ai/javaml/getting-started' },
+            //{ text: '数据处理', link: '/ai/javaml/data-processing' },
+            //{ text: '算法实现', link: '/ai/javaml/algorithms' }
           ]
         }
       ],
