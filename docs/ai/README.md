@@ -2,7 +2,7 @@
 
 ## 简介
 
-本章节将介绍几个主流的Java AI框架，包括Spring AI、LangChain4j、Jlama和deepseek4j。这些框架各具特色，能够帮助开发者快速构建AI应用。
+本章节将介绍多个主流的Java AI框架，包括Spring AI、Spring AI Alibaba、LangChain4j、Jlama、deepseek4j、Deeplearning4j、Neuroph、Weka、Encog、Mallet、Agent-Flex和JavaML。这些框架各具特色，能够帮助开发者快速构建AI应用。
 
 ## Spring AI
 
