@@ -116,7 +116,3 @@ public CompletableFuture<String> generateTextAsync(String prompt) {
 - 确保错误处理机制的完备性
 
 ## 更多资源
-
-- [Spring AI 官方文档](https://docs.spring.io/spring-ai/reference/)
-- [阿里云 API 文档](https://help.aliyun.com/)
-- [Spring AI Alibaba GitHub](https://github.com/alibaba/spring-ai)
