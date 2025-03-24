@@ -13,7 +13,7 @@ Spring AI是Spring生态系统中的新成员，旨在简化AI应用的开发过
 
 ## Spring AI Alibaba
 
-Spring AI Alibaba是阿里巴巴基于Spring AI开发的扩展框架，它提供了与阿里云AI服务的无缝集成，使开发者能够轻松使用阿里云的AI能力。
+Spring AI Alibaba 是一款 Java 语言实现的 AI 应用开发框架，旨在简化 Java AI 应用程序开发，让 Java 开发者像使用 Spring 开发普通应用一样开发 AI 应用。Spring AI Alibaba 基于 Spring AI 开源项目构建，默认提供阿里云基础模型服务、开源及商业生态组件的集成与最佳实践。
 
 - GitHub: [alibaba/spring-ai-alibaba](https://github.com/alibaba/spring-ai-alibaba)
 - API文档: [Spring AI Alibaba Documentation](https://github.com/alibaba/spring-ai-alibaba/blob/main/README-zh.md)
@@ -33,7 +33,7 @@ Jlama是一个轻量级的Java语言模型框架，专注于本地模型的部�
 
 ## deepseek4j
 
-deepseek4j是一个专注于深度学习的Java框架，它提供了全面的API支持，帮助开发者构建和部署深度学习模型。
+deepseek4j 是面向 DeepSeek 推出的 Java 开发 SDK，支持 DeepSeek R1 和 V3 全系列模型。提供对话推理、函数调用、JSON结构化输出、以及基于 OpenAI 兼容 API 协议的嵌入向量生成能力。通过 Spring Boot Starter 模块，开发者可以快速为 Spring Boot 2.x/3.x 以及 Solon 等主流 Java Web 框架集成 AI 能力，提供开箱即用的配置体系、自动装配的客户端实例，以及便捷的流式响应支持。
 
 - GitHub: [pig-mesh/deepseek4j](https://github.com/pig-mesh/deepseek4j)
 - API文档: [deepseek4j Documentation](https://javaai.pig4cloud.com/deepseek)
