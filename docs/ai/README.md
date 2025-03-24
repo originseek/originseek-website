@@ -35,13 +35,14 @@ Jlama是一个轻量级的Java语言模型框架，专注于本地模型的部�
 
 deepseek4j是一个专注于深度学习的Java框架，它提供了全面的API支持，帮助开发者构建和部署深度学习模型。
 
-- GitHub: [deepseek-ai/DeepSeek-LLM](https://github.com/deepseek-ai/DeepSeek-LLM)
+- GitHub: [pig-mesh/deepseek4j](https://github.com/pig-mesh/deepseek4j)
+- API文档: [deepseek4j Documentation](https://javaai.pig4cloud.com/deepseek)
 
 ## Deeplearning4j
 
 Deeplearning4j是一个开源的分布式深度学习库，专为Java和JVM设计。它支持GPU加速，提供了丰富的神经网络架构和算法，适合构建企业级AI应用。
 
-- GitHub: [eclipse/deeplearning4j](https://github.com/eclipse/deeplearning4j)
+- GitHub: [deeplearning4j/deeplearning4j](https://github.com/deeplearning4j/deeplearning4j)
 - API文档: [Deeplearning4j Documentation](https://deeplearning4j.konduit.ai/)
 
 ## Neuroph
