@@ -3,23 +3,23 @@ home: true
 title: OriginSeek - 技术探索与实践
 heroImage: /logo.svg
 heroText: OriginSeek
-tagline: 探索技术本源，分享实践真知
+tagline: 探索技术本源，提升认知格局
 actions:
-  - text: 开始学习
+  - text: 开始探索
     link: /java/
     type: primary
-  - text: 了解更多
-    link: /about/
+  - text: 技术体系
+    link: /books/
     type: secondary
 features:
-  - title: 爪哇技术精粹
-    details: 深入浅出的爪哇核心知识，从基础到高级，助您掌握爪哇开发精髓。
-  - title: 最佳实践指南
-    details: 汇集企业级开发经验，设计模式、性能优化、代码规范一应俱全。
-  - title: 框架源码剖析
-    details: Spring、MyBatis 等主流框架深度解析，理解技术本质。
-  - title: 实战项目驱动
-    details: 真实项目案例，从需求分析到架构设计，全方位提升开发能力。
+  - title: 技术本质探索
+    details: 深入底层原理与设计思想，探寻技术演进本源，建立系统化的技术认知。
+  - title: 源码深度剖析
+    details: 剖析主流框架核心机制，理解设计精髓，掌握技术实现真谛。
+  - title: 技术认知提升
+    details: 梳理技术发展脉络，把握技术演进方向，构建完整的技术知识体系。
+  - title: 技术分享交流
+    details: 分享学习心得与实践经验，碰撞思维火花，共同探讨技术成长之路。
 
 ---
 
