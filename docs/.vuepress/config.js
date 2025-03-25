@@ -306,22 +306,6 @@ export default defineUserConfig({
             //{ text: '算法实现', link: '/ai/javaml/algorithms' }
           ]
         }
-      ],
-      '/about/': [
-        {
-          text: '个人简介',
-          collapsible: true,
-          children: [
-            { text: '个人简介', link: '/about/#个人简介' }
-          ]
-        },
-        {
-          text: '兴趣爱好',
-          collapsible: true,
-          children: [
-            { text: '兴趣爱好', link: '/about/#兴趣爱好' }
-          ]
-        }
       ]
     },
     
