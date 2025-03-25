@@ -4,6 +4,9 @@ import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
   bundler: viteBundler(),
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg' }]
+  ],
   theme: hopeTheme({
     // 主题基本配置
     hostname: 'https://originseek.com',
