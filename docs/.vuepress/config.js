@@ -31,6 +31,7 @@ export default defineUserConfig({
       { text: 'AI框架', link: '/ai/', activeMatch: '/ai/'},
       { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
       { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
+      { text: '插件', link: '/plugins/', activeMatch: '/plugins/'},
       { text: '关于作者', link: '/about/', activeMatch: '/about/'},
     ],
     
