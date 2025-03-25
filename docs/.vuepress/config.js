@@ -316,20 +316,6 @@ export default defineUserConfig({
           ]
         },
         {
-          text: '背景经历',
-          collapsible: true,
-          children: [
-            { text: '背景经历', link: '/about/#背景经历' }
-          ]
-        },
-        {
-          text: '技术栈',
-          collapsible: true,
-          children: [
-            { text: '技术栈', link: '/about/#技术栈' }
-          ]
-        },
-        {
           text: '兴趣爱好',
           collapsible: true,
           children: [
