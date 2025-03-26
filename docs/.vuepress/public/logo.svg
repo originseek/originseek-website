@@ -2,34 +2,40 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- 渐变定义 -->
   <defs>
-    <linearGradient id="sharkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a365d"/>
-      <stop offset="100%" style="stop-color:#2c5282"/>
-    </linearGradient>
-    <linearGradient id="finGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2b6cb0"/>
-      <stop offset="100%" style="stop-color:#4299e1"/>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <!-- 鲨鱼身体（向上游动的姿态） -->
-  <path d="M100 160 C60 160, 40 120, 40 80 C40 40, 100 20, 160 80 C160 120, 140 160, 100 160 Z" 
-        fill="url(#sharkGradient)"/>
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="90" fill="url(#bodyGradient)" opacity="0.1">
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="3s" repeatCount="indefinite" />
+  </circle>
   
-  <!-- 鲨鱼尾鳍 -->
-  <path d="M90 140 C70 160, 50 150, 30 170 L50 140 L30 110 C50 130, 70 120, 90 140" 
-        fill="url(#finGradient)"/>
+  <!-- 猫头鹰身体 -->
+  <path d="M100 60 C60 60, 40 100, 40 130 C40 160, 70 180, 100 180 C130 180, 160 160, 160 130 C160 100, 140 60, 100 60" fill="url(#bodyGradient)">
+    <animate attributeName="d" values="M100 60 C60 60, 40 100, 40 130 C40 160, 70 180, 100 180 C130 180, 160 160, 160 130 C160 100, 140 60, 100 60;M100 65 C65 65, 45 105, 45 135 C45 165, 75 185, 100 185 C125 185, 155 165, 155 135 C155 105, 135 65, 100 65;M100 60 C60 60, 40 100, 40 130 C40 160, 70 180, 100 180 C130 180, 160 160, 160 130 C160 100, 140 60, 100 60" dur="3s" repeatCount="indefinite" />
+  </path>
   
-  <!-- 鲨鱼背鳍 -->
-  <path d="M120 60 L150 30 L130 70 Z" 
-        fill="url(#finGradient)"/>
+  <!-- 眼睛 -->
+  <circle cx="75" cy="100" r="15" fill="white">
+    <animate attributeName="r" values="15;13;15" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="125" cy="100" r="15" fill="white">
+    <animate attributeName="r" values="15;13;15" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="75" cy="100" r="8" fill="#1a365d">
+    <animate attributeName="r" values="8;7;8" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="125" cy="100" r="8" fill="#1a365d">
+    <animate attributeName="r" values="8;7;8" dur="2s" repeatCount="indefinite" />
+  </circle>
   
-  <!-- 鲨鱼眼睛 -->
-  <circle cx="80" cy="70" r="5" fill="#fff"/>
-  <circle cx="80" cy="70" r="2" fill="#000"/>
+  <!-- 喙 -->
+  <path d="M95 115 L100 125 L105 115" fill="none" stroke="#1a365d" stroke-width="3" />
   
-  <!-- 鲨鱼鳃 -->
-  <path d="M70 90 L90 90" stroke="#4299e1" stroke-width="2"/>
-  <path d="M68 95 L88 95" stroke="#4299e1" stroke-width="2"/>
-  <path d="M66 100 L86 100" stroke="#4299e1" stroke-width="2"/>
+  <!-- 耳朵 -->
+  <path d="M70 70 L85 50 L100 70" fill="url(#bodyGradient)" />
+  <path d="M130 70 L115 50 L100 70" fill="url(#bodyGradient)" />
 </svg>
