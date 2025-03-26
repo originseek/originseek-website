@@ -90,17 +90,10 @@ export default defineUserConfig({
             { text: '深入理解Java虚拟机', link: '/books/tech/jvm' },
             { text: '代码整洁之道', link: '/books/tech/clean-code' },
             { text: '设计模式', link: '/books/tech/design-patterns' },
-            { text: '重构', link: '/books/tech/refactoring' }
-          ]
-        },
-        {
-          text: '非技术类书籍',
-          collapsible: true,
-          children: [
-            { text: '原则', link: '/books/non-tech/principles' },
-            { text: '思考，快与慢', link: '/books/non-tech/thinking' },
-            { text: '穷查理宝典', link: '/books/non-tech/charlie' },
-            { text: '人类简史', link: '/books/non-tech/sapiens' }
+            { text: '重构', link: '/books/tech/refactoring' },
+            { text: 'Effective Java', link: '/books/tech/effective-java' },
+            { text: 'Spring实战', link: '/books/tech/spring-in-action' },
+            { text: 'Java并发编程实战', link: '/books/tech/java-concurrency' }
           ]
         }
       ],
