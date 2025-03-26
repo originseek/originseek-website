@@ -19,7 +19,7 @@ export default defineUserConfig({
     breadcrumbIcon: true,
     
     // 页脚配置
-    footer: "京ICP备XXXXX号-1 <a href=\"/terms/\">服务条款</a> <a href=\"/privacy/\">隐私政策</a>",
+    footer: "<a href=\"/terms/\">服务条款</a> <a href=\"/privacy/\">隐私政策</a>",
     copyright: "Copyright © 2025 OriginSeek@王虎 <a href=\"/copyright/\">版权说明</a>",
     
     // 社交链接
