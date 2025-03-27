@@ -3,11 +3,12 @@
 <p align="center">
   <img src="./docs/.vuepress/public/logo.svg" alt="OriginSeek Logo" width="200" height="200">
 </p>
-
 <p align="center">
   探索技术本源，提升认知格局
 </p>
-
+<div align="center" style="line-height: 1;">
+  <a href="https://www.originseek.com"><img alt="Homepage" src="./docs/.vuepress/public/logo.svg"/></a>
+</div>
 ## 项目简介
 
 OriginSeek 是一个专注于技术探索与实践的知识分享平台，旨在帮助开发者深入理解技术本质，构建系统化的技术认知。网站涵盖 Java 技术栈、AI 框架、技术书籍推荐以及实用开发工具等多个领域的内容。
