@@ -15,6 +15,7 @@ export default defineUserConfig({
       url: 'https://originseek.com',
     },
     logo: '/logo.svg',
+    navbarTitle: 'OriginSeek',
     breadcrumb: true,
     breadcrumbIcon: true,
 
