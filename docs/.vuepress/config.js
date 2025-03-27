@@ -17,6 +17,29 @@ export default defineUserConfig({
     logo: '/logo.svg',
     breadcrumb: true,
     breadcrumbIcon: true,
+
+    // 评论系统配置
+    comment: {
+      // 启用评论功能
+      enabled: true,
+      provider: 'Giscus',
+      repo: 'originseek/originseek.github.io',
+      repoId: 'R_kgDOOK8QPw',
+      category: 'Comments',
+      categoryId: 'DIC_kwDOOK8QP84CoWsj',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'bottom',
+      lang: 'zh-CN',
+      darkTheme: 'dark',
+      lightTheme: 'light',
+      lazyLoading: true,
+      crossorigin: 'anonymous',
+      commentOrder: 'oldest',
+      loading: 'lazy',
+      strict: 0,
+      emitMetadata: 0
+    },
     
     // 页脚配置
     footer: "<a href=\"/terms/\">服务条款</a> <a href=\"/privacy/\">隐私政策</a>",
