@@ -8,9 +8,6 @@ export default defineUserConfig({
     ['link', { rel: 'icon', href: '/logo.svg' }]
   ],
   theme: hopeTheme({
-    plugins: {
-      blog: true,
-    },
     // 博客功能配置
     blog: {
       article: '/news/',
@@ -54,6 +51,98 @@ export default defineUserConfig({
     
     // 侧边栏配置
     sidebar: {
+      '/category/': [
+        {
+          text: '分类',
+          collapsible: true,
+          children: [
+            { text: '所有分类', link: '/category/' }
+          ]
+        }
+      ],
+      '/tag/': [
+        {
+          text: '标签',
+          collapsible: true,
+          children: [
+            { text: '所有标签', link: '/tag/' }
+          ]
+        }
+      ],
+      '/article/': [
+        {
+          text: '文章',
+          collapsible: true,
+          children: [
+            { text: '所有文章', link: '/article/' },
+            { text: '收藏文章', link: '/article/star/' }
+          ]
+        }
+      ],
+      '/timeline/': [
+        {
+          text: '时间轴',
+          collapsible: true,
+          children: [
+            { text: '时间轴', link: '/timeline/' }
+          ]
+        }
+      ],
+      '/about/': [
+        {
+          text: '关于',
+          collapsible: true,
+          children: [
+            { text: '关于我们', link: '/about/' },
+            { text: '版权说明', link: '/about/copyright/' }
+          ]
+        }
+      ],
+      '/news/': [
+        {
+          text: '2024年',
+          collapsible: true,
+          children: [
+            { text: 'Java 21新特性', link: '/news/2024/java21-features' },
+            { text: 'Spring AI发布', link: '/news/2024/spring-ai-release' }
+          ]
+        },
+        {
+          text: '2025年',
+          collapsible: true,
+          children: [
+            { text: 'AI开发趋势', link: '/news/2025/ai-dev-trends' },
+            { text: '量子密码学', link: '/news/2025/quantum-crypto' }
+          ]
+        }
+      ],
+      '/plugins/': [
+        {
+          text: '插件',
+          collapsible: true,
+          children: [
+            { text: '插件列表', link: '/plugins/' }
+          ]
+        }
+      ],
+      '/privacy/': [
+        {
+          text: '隐私政策',
+          collapsible: true,
+          children: [
+            { text: '隐私政策', link: '/privacy/' }
+          ]
+        }
+      ],
+      '/terms/': [
+        {
+          text: '服务条款',
+          collapsible: true,
+          children: [
+            { text: '服务条款', link: '/terms/' }
+          ]
+        }
+      ],
       '/java/': [
         {
           text: 'Java 基础',
@@ -321,6 +410,7 @@ export default defineUserConfig({
     
     // 插件配置
     plugins: {
+      blog: true,
       // 启用搜索功能
       search: {
         // 配置搜索
