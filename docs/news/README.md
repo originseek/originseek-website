@@ -1,6 +1,6 @@
 ---
-title: 技术动态
-description: 最新技术动态和行业资讯
+title: 科技动态
+description: 最新科技动态和行业资讯
 index: false
 header: false
 feed: true

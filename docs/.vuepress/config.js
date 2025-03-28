@@ -42,7 +42,7 @@ export default defineUserConfig({
       { text: '首页', link: '/' },
       { text: '爪哇',link: '/java/', activeMatch: '/java/'},
       { text: 'AI框架', link: '/ai/', activeMatch: '/ai/'},
-      { text: '技术动态', link: '/news/', activeMatch: '/news/'},
+      { text: '科技动态', link: '/news/', activeMatch: '/news/'},
       { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
       { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
       { text: '插件', link: '/plugins/', activeMatch: '/plugins/'},
@@ -51,24 +51,6 @@ export default defineUserConfig({
     
     // 侧边栏配置
     sidebar: {
-      '/news/': [
-        {
-          text: '2025年',
-          collapsible: true,
-          children: [
-            { text: 'AI驱动的软件开发：2025年发展趋势', link: '/news/2025/ai-dev-trends' },
-            { text: '量子计算与密码学：新一代安全技术的突破', link: '/news/2025/quantum-crypto' }
-          ]
-        },
-        {
-          text: '2024年',
-          collapsible: true,
-          children: [
-            { text: 'Java 21 LTS 版本重磅特性解析', link: '/news/2024/java21-features' },
-            { text: 'Spring AI 1.0 正式发布', link: '/news/2024/spring-ai-release' }
-          ]
-        }
-      ],
       '/java/': [
         {
           text: 'Java 基础',
