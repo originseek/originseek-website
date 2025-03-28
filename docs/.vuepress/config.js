@@ -8,6 +8,13 @@ export default defineUserConfig({
     ['link', { rel: 'icon', href: '/logo.svg' }]
   ],
   theme: hopeTheme({
+    // 博客功能配置
+    blog: {
+      article: '/news/',
+      articleInfo: ['Date', 'PageView', 'Category', 'Tag'],
+      name: 'OriginSeek',
+      description: '技术分享与探索',
+    },
     // 主题基本配置
     hostname: 'https://originseek.com',
     author: {
@@ -35,6 +42,7 @@ export default defineUserConfig({
       { text: '首页', link: '/' },
       { text: '爪哇',link: '/java/', activeMatch: '/java/'},
       { text: 'AI框架', link: '/ai/', activeMatch: '/ai/'},
+      { text: '技术动态', link: '/news/', activeMatch: '/news/'},
       { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
       { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
       { text: '插件', link: '/plugins/', activeMatch: '/plugins/'},
