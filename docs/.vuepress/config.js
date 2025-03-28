@@ -1,9 +1,26 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
+import { compression } from 'vite-plugin-compression2'
 
 export default defineUserConfig({
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [compression()],
+      build: {
+        minify: 'terser',
+        terserOptions: {
+          compress: {
+            drop_console: true,
+            drop_debugger: true
+          }
+        }
+      },
+      server: {
+        hmr: true
+      }
+    }
+  }),
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }]
   ],
