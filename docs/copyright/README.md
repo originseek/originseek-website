@@ -29,6 +29,6 @@
 
 如果您对版权问题有任何疑问，或发现本网站中的内容侵犯了您的知识产权，请通过以下方式联系我们：
 
-- 邮箱：[contact@originseek.com](mailto:contact@originseek.com)
+- 邮箱：[service@originseek.com](mailto:service@originseek.com)
 
 我们会在收到您的通知后，及时核实并处理相关问题。

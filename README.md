@@ -161,7 +161,7 @@ pnpm docs:build
 如有任何问题或建议，欢迎通过以下方式联系：
 
 - 提交 [Issue](https://github.com/originseek/originseek-website/issues)
-- 发送邮件至 [originseek@example.com](mailto:originseek@example.com)
+- 发送邮件至 [service@originseek.com](mailto:service@originseek.com)
 
 ---
 

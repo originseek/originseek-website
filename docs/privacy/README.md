@@ -61,4 +61,4 @@
 
 如果您对本隐私政策有任何疑问或顾虑，请通过以下方式联系我们：
 
-- 邮箱：[contact@originseek.com](mailto:contact@originseek.com)
+- 邮箱：[service@originseek.com](mailto:service@originseek.com)

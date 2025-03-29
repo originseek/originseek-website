@@ -42,4 +42,4 @@
 
 如果您对本服务条款有任何疑问，请通过以下方式联系我们：
 
-- 邮箱：[contact@originseek.com](mailto:contact@originseek.com)
+- 邮箱：[service@originseek.com](mailto:service@originseek.com)
