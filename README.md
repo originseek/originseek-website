@@ -62,15 +62,46 @@ OriginSeek 是一个专注于技术探索与实践的知识分享平台，旨在
 │   ├── README.md          # 首页
 │   ├── about              # 关于作者
 │   ├── ai                 # AI 框架相关内容
+│   │   ├── agent-flex     # Agent Flex 框架
+│   │   ├── deeplearning4j # Deeplearning4j 框架
+│   │   ├── deepseek4j     # DeepSeek4j 框架
+│   │   ├── encog          # Encog 神经网络框架
+│   │   ├── javaml         # Java 机器学习库
+│   │   ├── jlama          # JLama 框架
+│   │   ├── langchain4j    # LangChain4j 框架
+│   │   ├── mallet         # MALLET 自然语言处理工具包
+│   │   ├── neuroph        # Neuroph 神经网络框架
+│   │   ├── spring-ai      # Spring AI 框架
+│   │   ├── spring-ai-alibaba # Spring AI 阿里巴巴集成
+│   │   └── weka           # Weka 机器学习工具包
+│   ├── blog               # 博客文章
+│   │   ├── 2024           # 2024年文章
+│   │   └── 2025           # 2025年文章
 │   ├── books              # 阅读书单
+│   │   └── tech           # 技术类书籍
 │   ├── copyright          # 版权说明
 │   ├── java               # Java 相关内容
 │   ├── plugins            # 插件相关内容
 │   ├── privacy            # 隐私政策
 │   ├── terms              # 服务条款
 │   └── tools              # 常用工具
+│       ├── api            # API 测试工具
+│       ├── check          # 代码检查工具
+│       ├── code           # 代码相关工具
+│       ├── convert        # 格式转换工具
+│       ├── data           # 数据处理工具
+│       ├── design         # 设计相关工具
+│       ├── editor         # 编辑器工具
+│       ├── image          # 图像处理工具
+│       ├── network        # 网络工具
+│       ├── office         # 办公工具
+│       ├── performance    # 性能分析工具
+│       └── security       # 安全相关工具
 ├── deploy.sh              # 部署脚本
 ├── package.json           # 项目依赖配置
+├── pnpm-lock.yaml         # pnpm 依赖锁定文件
+├── CNAME                  # 自定义域名配置
+├── .gitignore             # Git 忽略文件配置
 └── README.md              # 项目说明文档
 ```
 
