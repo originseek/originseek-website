@@ -1,6 +1,6 @@
 ---
-title: 科技动态
-description: 最新科技动态和行业资讯
+title: 科技分享
+description: 分享技术知识，让生活更美好。
 index: false
 header: false
 feed: true

@@ -50,7 +50,7 @@ export default defineUserConfig({
       { text: '首页', link: '/' },
       { text: '爪哇',link: '/java/', activeMatch: '/java/'},
       { text: 'AI框架', link: '/ai/', activeMatch: '/ai/'},
-      { text: '科技动态', link: '/news/', icon: 'blog', activeMatch: '/news/'},
+      { text: '博客', link: '/blog/', icon: 'blog', activeMatch: '/blog/'},
       { text: '阅读书单', link: '/books/', activeMatch: '/books/'},
       { text: '常用工具', link: '/tools/', activeMatch: '/tools/'},
       { text: '插件', link: '/plugins/', activeMatch: '/plugins/'},
