@@ -5,11 +5,11 @@ heroImage: /logo.svg
 heroText: OriginSeek
 tagline: 探索技术本源，提升认知格局
 actions:
-  - text: 开始探索
-    link: /java/
+  - text: 技术博客
+    link: /blog/
     type: primary
-  - text: 技术体系
-    link: /books/
+  - text: Java专区
+    link: /java/
     type: secondary
 features:
   - title: 技术本质探索

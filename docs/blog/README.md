@@ -1,5 +1,5 @@
 ---
-title: 科技分享
+title: Technology related sharing
 description: 分享技术知识，让生活更美好。
 index: false
 header: false
