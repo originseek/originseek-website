@@ -26,19 +26,19 @@ OriginSeek 是一个专注于技术探索与实践的知识分享平台，旨在
 
 ### 🍵 Java 技术栈
 
-提供全面的 Java 编程知识，从基础语法到高级特性，从框架原理到最佳实践，帮助开发者构建扎实的 Java 技术体系。
+提供全面的 Java 编程知识，包括语言基础、面向对象编程、集合框架、多线程编程、IO操作、网络编程、反射机制等基础知识，以及Spring Framework、Spring Boot、Spring Cloud、MyBatis等主流框架的使用和原理剖析，帮助开发者构建扎实的 Java 技术体系。
 
 ### 🤖 AI 框架
 
-介绍多个主流的 Java AI 框架，包括 Spring AI、LangChain4j、Jlama、Deeplearning4j 等，帮助开发者快速构建 AI 应用。
+介绍多个主流的 Java AI 框架，包括 Spring AI、Spring AI Alibaba、LangChain4j、Jlama、Deepseek4j、Deeplearning4j、Neuroph、Weka、Encog、Mallet、Agent-Flex和JavaML等，这些框架各具特色，能够帮助开发者快速构建AI应用。
 
 ### 📚 阅读书单
 
-精选技术类书籍推荐，涵盖 Java 虚拟机、设计模式、重构、并发编程等多个领域，助力开发者拓宽技术视野。
+精选技术类书籍推荐，涵盖《深入理解Java虚拟机》、《代码整洁之道》、《设计模式》、《重构》、《Effective Java》、《Spring实战》、《Java并发编程实战》等经典著作，助力开发者拓宽技术视野。
 
 ### 🛠️ 常用工具
 
-收集实用的在线工具，包括 API 测试、代码格式化、性能分析等多种开发辅助工具，提高开发效率。
+收集实用的在线工具，包括API测试工具（如Postman）、代码检查工具（如JSON格式化、正则表达式测试、代码格式化工具）、代码相关工具、格式转换工具、数据处理工具、设计相关工具、编辑器工具、图像处理工具、网络工具、办公工具、性能分析工具和安全相关工具等多种开发辅助工具，提高开发效率。
 
 ## 🔧 技术栈
 
@@ -47,7 +47,7 @@ OriginSeek 是一个专注于技术探索与实践的知识分享平台，旨在
 - **框架**：[VuePress 2.0](https://v2.vuepress.vuejs.org/zh/) - 基于 Vue 的静态网站生成器
 - **主题**：[VuePress Theme Hope](https://theme-hope.vuejs.press/zh/) - 功能强大的 VuePress 主题
 - **包管理器**：[pnpm](https://pnpm.io/zh/) - 快速、节省磁盘空间的包管理器
-- **构建工具**：[Vite](https://vitejs.dev/) - 下一代前端构建工具
+- **构建工具**：[@vuepress/bundler-vite](https://v2.vuepress.vuejs.org/zh/reference/bundler/vite.html) - 基于 Vite 的 VuePress 打包工具
 - **搜索插件**：[@vuepress/plugin-search](https://v2.vuepress.vuejs.org/zh/reference/plugin/search.html) - VuePress 官方搜索插件
 
 ## 📂 项目结构
@@ -110,7 +110,7 @@ OriginSeek 是一个专注于技术探索与实践的知识分享平台，旨在
 ### 环境要求
 
 - Node.js 16.0 或更高版本
-- pnpm 7.0 或更高版本
+- pnpm 10.0 或更高版本
 
 ### 安装依赖
 
