@@ -166,6 +166,6 @@ pnpm docs:build
 ---
 
 <div align="center">
-  <p>© 2024 OriginSeek. 保留所有权利。</p>
+  <p>© 2025 OriginSeek. 保留所有权利。</p>
   <p>用 ❤️ 制作</p>
 </div>
