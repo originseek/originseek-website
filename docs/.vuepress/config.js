@@ -38,7 +38,7 @@ export default defineUserConfig({
     breadcrumbIcon: true,
     // 页脚配置
     //footer: "<a href=\"/terms/\">服务条款</a> <a href=\"/privacy/\">隐私政策</a>",
-    copyright: "Copyright © 2025 OriginSeek@王虎",
+    copyright: "MIT Licensed | Copyright © 2025 OriginSeek@王虎",
     //<a href=\"/copyright/\">版权说明</a>
     // 社交链接
     repo: 'originseek',

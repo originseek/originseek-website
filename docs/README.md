@@ -3,7 +3,7 @@ home: true
 title: OriginSeek - 技术探索与实践
 heroImage: /logo.svg
 heroText: OriginSeek
-tagline: 探索技术本源，提升认知格局
+tagline: 分享不是失去，而是获得更多。
 actions:
   - text: 技术博客
     link: /blog/

@@ -2,3 +2,8 @@
   padding: 0 0.5rem 0 2rem !important;
   background-position: 0.6rem center !important;
 }
+
+// 隐藏页面底部的元数据组件
+.vp-page-meta {
+  display: none !important;
+}
